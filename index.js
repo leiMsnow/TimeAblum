@@ -1,4 +1,9 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+import './app/index'
 
-AppRegistry.registerComponent('TimeAblum', () => App);
+console.ignoredYellowBox = [
+    'Warning: componentWillMount is deprecated',
+    'Warning: componentWillReceiveProps is deprecated',
+    'Warning: componentWillUpdate is deprecated',
+    'Warning: isMounted(...) is deprecated',
+  ]
+  
