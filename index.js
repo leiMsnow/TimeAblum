@@ -1,9 +1,5 @@
-import './app/index'
+import './app/global';
 
-console.ignoredYellowBox = [
-    'Warning: componentWillMount is deprecated',
-    'Warning: componentWillReceiveProps is deprecated',
-    'Warning: componentWillUpdate is deprecated',
-    'Warning: isMounted(...) is deprecated',
-  ]
-  
+import App from './App';
+
+const app = new App();

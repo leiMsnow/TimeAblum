@@ -1,0 +1,25 @@
+def supportVersion = "26.0.2"
+def retrofitVersion = "2.3.0"
+
+ext {
+
+    dependencies = [
+            "support-v4"       : "com.android.support:support-v4:${supportVersion}",
+            "support-v7"       : "com.android.support:appcompat-v7:${supportVersion}",
+            "design"           : "com.android.support:design:${supportVersion}",
+            "cardview"         : "com.android.support:cardview-v7:${supportVersion}",
+            "vector-drawable"  : "com.android.support:support-vector-drawable:${supportVersion}",
+            "annotations"      : "com.android.support:support-annotations:${supportVersion}",
+            "retrofit2"        : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            "retrofit2-gson"   : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            "retrofit2-rxjava2": "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    ]
+    defaultConfig = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 16,
+            targetSdkVersion : 22,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+}

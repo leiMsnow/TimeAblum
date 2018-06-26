@@ -1,15 +1,14 @@
 package com.timeablum;
 
-import com.facebook.react.ReactActivity;
+import android.view.LayoutInflater;
+import android.widget.LinearLayout;
 
-public class MainActivity extends ReactActivity {
+import com.reactnativenavigation.controllers.SplashActivity;
 
-    /**
-     * Returns the name of the main component registered from JavaScript.
-     * This is used to schedule rendering of the component.
-     */
+public class MainActivity extends SplashActivity {
+
     @Override
-    protected String getMainComponentName() {
-        return "TimeAblum";
+    public LinearLayout createSplashLayout() {
+        return (LinearLayout) LayoutInflater.from(this).inflate(R.layout.activity_main, null);
     }
 }
