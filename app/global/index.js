@@ -11,5 +11,5 @@ global.phone = {
     mPixel: 1 / PixelRatio.get(),
 };
 
-global.LOGS = Logs;
+global.log = Logs;
 

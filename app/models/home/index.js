@@ -1,9 +1,15 @@
 
-const GET_HOME_BANNER_SUCCESS = 'GET_HOME_BANNER_SUCCESS'
+import * as API from '../../services/home'
+
+const API_SUCCESS = 'API_SUCCESS'
+
+const initialState = {
+    ablumList: []
+};
 
 export default function (state = initialState, action) {
     switch (action.type) {
-        case GET_HOME_BANNER_SUCCESS:
+        case API_SUCCESS:
             return {
                 ...state,
                 ...action.payload,
@@ -13,6 +19,23 @@ export default function (state = initialState, action) {
     }
 }
 
-const initialState = {
+function defaultCallback() {
+    log.l('defaultCallback')
+}
 
-};
+export function getAblumList(callback = defaultCallback) {
+    return function (dispatch) {
+        return API.getAblumList()
+            .then(res => {
+                if (res) {
+                    callback()
+                    dispatch({
+                        type: API_SUCCESS,
+                        payload: {
+                            banner: res.data,
+                        }
+                    });
+                }
+            });
+    }
+}

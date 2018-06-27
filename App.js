@@ -2,7 +2,7 @@ import React from 'react';
 import { Navigation } from 'react-native-navigation';
 import { Provider } from 'react-redux';
 
-import configureStore from './app/store';
+import { configureStore } from './app/store';
 import { registerComponents, registerScreenVisibilityListener } from "./app/screens";
 import { AppIcons, IconsLoaded } from './app/utils';
 
