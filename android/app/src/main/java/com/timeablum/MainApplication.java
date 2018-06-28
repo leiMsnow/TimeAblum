@@ -3,6 +3,7 @@ package com.timeablum;
 import android.support.annotation.Nullable;
 
 import com.facebook.react.ReactApplication;
+import com.reactnative.ivpusic.imagepicker.PickerPackage;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.oblador.vectoricons.VectorIconsPackage;

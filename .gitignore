@@ -59,3 +59,5 @@ yarn.lock
 package-lock.json
 .settings
 .vscode
+/android/app/src/main/assets/index.android.bundle.meta
+/android/app/src/main/assets/index.android.bundle

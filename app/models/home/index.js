@@ -19,11 +19,7 @@ export default function (state = initialState, action) {
     }
 }
 
-function defaultCallback() {
-    log.l('defaultCallback')
-}
-
-export function getAblumList(callback = defaultCallback) {
+export function getAblumList(callback = () => { }) {
     return function (dispatch) {
         return API.getAblumList()
             .then(res => {
@@ -32,9 +28,9 @@ export function getAblumList(callback = defaultCallback) {
                     dispatch({
                         type: API_SUCCESS,
                         payload: {
-                            banner: res.data,
+                            ablumList: res.data
                         }
-                    });
+                    })
                 }
             });
     }

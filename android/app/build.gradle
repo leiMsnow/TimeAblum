@@ -97,6 +97,7 @@ static def releaseTime() {
 }
 
 dependencies {
+    compile project(':react-native-image-crop-picker')
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-navigation')
     implementation fileTree(dir: "libs", include: ["*.jar"])

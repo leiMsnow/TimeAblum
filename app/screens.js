@@ -1,6 +1,6 @@
 import { Navigation, ScreenVisibilityListener } from 'react-native-navigation';
 // test
-import Drawer from "./routes/drawer";
+import Cover from "./routes/cover";
 // tab
 import Home from "./routes/home";
 
@@ -10,7 +10,7 @@ global.Components = new Map();
 
 export function registerComponents(store, Provider) {
     const componentsMap = [
-        { name: 'Drawer', path: Drawer },
+        { name: 'Cover', path: Cover },
         { name: 'Home', path: Home },
     ];
 
@@ -37,7 +37,7 @@ export function registerScreenVisibilityListener() {
         },
         didDisappear: ({ screen }) => {
             let component = global.Components.get(screen);
-            LOGS.log('ScreenListener',
+            log.l('ScreenListener',
                 `Screen [${screen} displayed] in [${
                 displayTime(component.endTime, component.startTime).join(' ')
                 }'s] [${component.commandType}]`)

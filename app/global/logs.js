@@ -1,8 +1,8 @@
 
-const prefixl = ['%c[LOG]', 'color: green; background-color:black'];
-const prefixw = ['%c[WARN]', 'color: yellow; background-color:black'];
-const prefixe = ['%c[ERROR]', 'color: red; background-color:black'];
-const prefixi = ['%c[Info]', 'color: blue; background-color:black'];
+const prefixl = ['%c LOG ', 'color: white; background-color:green'];
+const prefixw = ['%c WARN ', 'color: white; background-color:yellow'];
+const prefixe = ['%c ERROR ', 'color: white; background-color:red'];
+const prefixi = ['%c INFO ', 'color: white; background-color:blue'];
 
 const l = (...message) => {
     if (__DEV__) {

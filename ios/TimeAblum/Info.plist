@@ -35,8 +35,12 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+  <key>NSCameraUsageDescription</key>
+  <string>Camera permission required to upload photos</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Location permission required to show nearby office</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>Photos permission required to upload photos</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Entypo.ttf</string>
